@@ -56,10 +56,10 @@ Enable git hub action by create a folder .github/workflows at a root level. then
 ![alt text](screenshots/locust.png)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
-![alt text](<screenshots/image copy 7.png>)
+![alt text](<screenshots/image copy 2.png>)
 
 * Running Azure App Service from Azure Pipelines automatic deployment
-![alt text](<screenshots/image copy 5.png>)
+![alt text](screenshots/Pipeline.png)
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 The output should look similar to this:
 
@@ -71,19 +71,18 @@ Port: 443
 ```
 ![alt text](screenshots/Predictaz-web.png)
 * Output of streamed log files from deployed application
-![alt text](<screenshots/image copy 6.png>)
+![alt text](<screenshots/image copy 3.png>)
 > 
 
 ## Enhancements
 
 <TODO: A short description of how to improve the project in the future>
 
-To improve you need to automatically update your github repo Starter Flask into appropriate requirements.txt it waste a lot of time to fix.
+Change with different multi languages not only Python
 
 ## Demo 
 
 <TODO: Add link Screencast on YouTube>
-https://youtu.be/SeN8LA2rWtU
 
 
 
