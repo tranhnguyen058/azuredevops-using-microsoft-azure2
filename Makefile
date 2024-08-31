@@ -1,5 +1,5 @@
 setup:
-	sudo python3 -m venv .azuredevops2-using-microsoft-azure2
+	python3 -m venv .azuredevops2-using-microsoft-azure2
 
 install:
 	pip install --upgrade pip &&\
