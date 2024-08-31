@@ -7,8 +7,8 @@ class WebsiteTestUser(HttpUser):
             "LSTAT": {"0": 4.98}}
     @task(1)
     def test1(self):
-        self.client.get("https://cocvu-up-prj2.azurewebsites.net/")
+        self.client.get("https://tranhng05821-test-2.azurewebsites.net/")
 
     @task(2)
     def test2(self):
-        self.client.post("https://cocvu-up-prj2.azurewebsites.net:443/predict", json=self.data)
+        self.client.post("https://tranhng05821-test-2.azurewebsites.net:443/predict", json=self.data)

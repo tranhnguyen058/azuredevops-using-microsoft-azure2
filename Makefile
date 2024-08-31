@@ -1,5 +1,5 @@
 setup:
-	python3 -m venv .az-devops-test-temporary
+	sudo python3 -m venv .azuredevops2-using-microsoft-azure2
 
 install:
 	pip install --upgrade pip &&\

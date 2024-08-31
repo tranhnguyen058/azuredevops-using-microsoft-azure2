@@ -24,13 +24,13 @@ https://docs.google.com/spreadsheets/d/1hA4k7orHzZA6g1LVb-WnYH0zPMoDqeDH1R21_-Cr
 
 * Project running on Azure App Service
 In order to run on Azure App service we clone the repo,navigate to the repo and after that we run `make setup`, then run 
-`source .az-devops-test-temporary` , after that run `make install` to install requirements for python.
+`source .azuredevops-using-microsoft-azure2/bin/activate` , after that run `make install` to install requirements for python.
 
 - Deploy app with localhost on local run ` python app.py` , result test local run :
-![alt text](<screenshots/image copy 2.png>)
+![alt text](screenshots/PredLocal.png)
 
-- Deploy app with Azure App Service  run : ` az webapp up -n cocvu-up-prj2 -g Azuredevops --sku FREE`, result test with Azure App Service:
-![alt text](<screenshots/image copy 3.png>)
+- Deploy app with Azure App Service  run : ` az webapp up -n tranhng05821-devops -g Azuredevops --sku FREE`, result test with Azure App Service:
+![alt text](screenshots/Predictaz-web.png)
 
 
 * Project cloned into Azure Cloud Shell
@@ -43,17 +43,17 @@ cd ./ssh => get public key by using `cat id_rsa.pub`
 copy and paste it into github account.
 after done added ssh key into github account 
 you easily to clone it self:
-![!\[alt text\](1.JPG)](screenshots/1.JPG)
+![alt text](screenshots/gitclone.png)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`:
-![alt text](screenshots/2.JPG)
+![alt text](screenshots/makeall.png)
 
 * Output of a test run
 Enable git hub action by create a folder .github/workflows at a root level. then create a yaml file (pythonapp.yaml by default):
-![alt text](screenshots/3.JPG)
+![alt text](screenshots/GHaction.png)
 
 - Locust file test:
-![alt text](<screenshots/image copy 4.png>)
+![alt text](screenshots/locust.png)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 ![alt text](<screenshots/image copy 7.png>)
@@ -69,8 +69,7 @@ udacity@Azure:~$ ./make_predict_azure_app.sh
 Port: 443
 {"prediction":[20.35373177134412]}
 ```
-![alt text](<screenshots/image copy 3.png>)
-
+![alt text](screenshots/Predictaz-web.png)
 * Output of streamed log files from deployed application
 ![alt text](<screenshots/image copy 6.png>)
 > 
@@ -89,4 +88,4 @@ https://youtu.be/SeN8LA2rWtU
 
 
 
-[Badge]: https://github.com/cocvu99/az-devops-test-temporary/actions/workflows/pythonapp.yaml/badge.svg
+[Badge]: https://github.com/tranhnguyen058/azuredevops-using-microsoft-azure2/actions/workflows/pythonapp.yaml/badge.svg

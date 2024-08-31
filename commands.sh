@@ -1,6 +1,6 @@
-git clone git@github.com:cocvu99/az-devops-test-temporary.git
-cd az-devops-test-temporary
+git clone git@github.com:tranhnguyen058/azuredevops-using-microsoft-azure2.git
+cd azuredevops2-using-microsoft-azure2
 make setup
-source .az-devops-test-temporary
+source .azuredevops2-using-microsoft-azure2
 make all
-az webapp up -n cocvu-up-prj2 -g Azuredevops --sku FREE
+az webapp up -n tranhng05821-test-2 -g Azuredevops --sku FREE
