@@ -82,7 +82,7 @@ stages:
           - task: AzureRmWebAppDeployment@4
             inputs:
               ConnectionType: 'AzureRM'
-              azureSubscription: 'accesss'
+              azureSubscription: 'access'
               appType: 'webAppLinux'
               WebAppName: 'tranhng05821-test-2'
               packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
