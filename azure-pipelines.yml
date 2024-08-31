@@ -32,7 +32,11 @@ stages:
     - task: UsePythonVersion@0
       inputs:
         versionSpec: '$(pythonVersion)'
+        disableDownloadFromRegistry: true
+        addToPath: true
+        architecture: 'x64'
       displayName: 'Use Python $(pythonVersion)'
+  
 
     - script: |
         python -m venv antenv
@@ -74,6 +78,9 @@ stages:
           - task: UsePythonVersion@0
             inputs:
               versionSpec: '$(pythonVersion)'
+              disableDownloadFromRegistry: true
+              addToPath: true
+              architecture: 'x64'
             displayName: 'Use Python version'
             
           - download: current
