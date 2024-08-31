@@ -27,7 +27,7 @@ stages:
   jobs:
   - job: BuildJob
     pool:
-      poolggwp
+      poola
     steps:
     - task: UsePythonVersion@0
       inputs:
@@ -64,7 +64,7 @@ stages:
   jobs:
   - deployment: DeploymentJob
     pool:
-      poolggwp
+      poola
     environment: $(environmentName)
     strategy:
       runOnce:
@@ -84,6 +84,6 @@ stages:
               ConnectionType: 'AzureRM'
               azureSubscription: 'accesss'
               appType: 'webAppLinux'
-              WebAppName: 'cocvu-up-prj2'
+              WebAppName: 'tranhng05821-test-2'
               packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
               RuntimeStack: 'PYTHON|3.10'
